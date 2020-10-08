@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Landing Page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
+      </div>
+
+      <ul>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Portfolio </a></li>
+        <li><a href="#"> Blog </a></li>
+        <li><a href="#"> Contact Me </a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button class="toggle" id="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1>My Landig Page</h1>
+      <p>Lorem ipsum dolor sit amet, container elit.</p>
+
+      <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <div class="container">
+      <h2>What is this landing page about?</h2>
+      <p>
+        Det er en kendsgerning, at man bliver distraheret af læsbart indhold på
+        en side, når man betragter dens layout. Meningen med at bruge Lorem
+        Ipsum er, at teksten indeholder mere eller mindre almindelig
+        tekstopbygning i modsætning til "Tekst her - og mere tekst her", mens
+        det samtidigt ligner almindelig tekst. Mange layoutprogrammer og
+        webdesignere bruger Lorem Ipsum som fyldtekst.
+      </p>
+
+      <h2>Benefits</h2>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul>
+      <p>
+        En søgning på Lorem Ipsum afslører mange websider, som stadig er på
+        udviklingsstadiet. Der har været et utal af variationer, som er opstået
+        enten på grund af fejl og andre gange med vilje (som blandt andet et
+        resultat af humor).
+      </p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with us to get offers, support and more.</p>
+          <form class="modal-form">
+            <div>
+              <label for="name"> Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email"> Email</label>
+              <input
+                type="email"
+                id="Email"
+                placeholder="Enter email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password"> Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2"> Confirm Password </label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="confirm password"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
